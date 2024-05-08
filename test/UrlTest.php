@@ -17,7 +17,7 @@ final class UrlTest extends TestCase
         $url = new Url(new UrlBase("http://hostname:7171", "/path"));
         $this->assertEquals("http://hostname:7171/path", strval($url));
 
-        $url = new Url(new UrlComponentData("hostname", 7272, "http", "/path1"));
+        $url = new Url(new UrlComponentData("hostname", 7272, "http", "/path"));
         $this->assertEquals("http://hostname:7272/path", strval($url));
     }
 }
