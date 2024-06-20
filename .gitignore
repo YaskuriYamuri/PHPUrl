@@ -1,0 +1,6 @@
+/vendor/
+/storages/*
+
+
+!/storages/.htaccess
+!/storages/activity.sqlite3

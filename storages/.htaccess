@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ - [F,L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+  # Order deny,allow  # Uncomment if mod_rewrite is not loaded
+  # Deny from all      # Uncomment if mod_rewrite is not loaded
+</IfModule>
